@@ -1,0 +1,18 @@
+node_modules
+dist
+coverage
+
+*.sh
+*.woff
+*.ttf
+.voscode
+.idea
+/public
+/docs
+.husky
+.local
+/bin
+Dockerfile
+
+# 不对 Deno 项目进行 lint 检查
+/faas
