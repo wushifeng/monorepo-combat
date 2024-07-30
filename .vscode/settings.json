@@ -1,0 +1,65 @@
+{
+    //Typescript配置
+    "typeseript.tsdk":"node_modules/typescript/lib",
+
+    //ESLint 配置
+    //为ESLint指定项目中使用的包管理器
+    "eslint.packageManager":"pnpm",
+    //为ESLint指定曝些文件需要进行检查
+    "eslint.validate": ["typescript","typescriptreact"],
+    //为ESLint配置检查规则的相关选项
+    "eslint.options":{
+    //用于指定ESLint 检查的文件扩展名
+    //这里表示ESLint只会检查以.js .vue和.ts为扩展名的文件
+    //如果项目中有其他扩展名的文件
+    //如.json或.css,则ESLint 将不会检查这些文件
+        "extensions":[".js",".vue",".ts"]
+    },
+
+    //Prettier 配置
+    "prettier.requireConfig":true,
+    "prettier.useEditorConfig": false,
+    "[ vue]":{
+        "editor.defaultFormatter":"esbenp.prettier-vscode",
+        "editor.formatOnSave":true,
+    },
+    "[html]":{
+        "editor.defaultFormatter":"esbenp.prettier-vscode",
+        "editor.formatOnSave":true,
+    },
+    "[javascript]":{
+        "editor.defaultFormatter":"esbenp.prettier-vscode",
+        "editor.formatonsave":true,
+    },
+    "[typescript]":{
+        "editor.defaultFormatter":"esbenp.prettier-vscode",
+        "editor.formatonsave":true,
+    },
+
+    //开启 Deno 支持
+    "deno.enable":true,
+    //Deno 支持的文件夹范围
+    "deno.enablePaths":["./faas"],
+    //是否开启 Deno的 lint
+    "deno.lint":true,
+    //是否开启 Deno 不稳定的功能
+    "deno.unstable":false,
+    //不使用 deno.json
+    //"deno.config":"./deno.json"
+    //不使用import map
+    //"deno.importMap":"./import map.json"
+    //打开Deno的code lens 相关设置
+    "deno.codeLens.implementations": true,
+    "deno.codeLens.references":true,
+    "deno.codeLens.referencesAllFunctions":true,
+    "deno.codeLens.test":true,
+    "deno.codeLens.testArgs":["--allow-all"],
+    //不使用 Deno 内置的格式化工具,使用Prettier
+    // "[typescript]":{
+    //"editor.defaultFormatter":"denoland.vscode-deno"
+    //},
+    //开启自动 import
+    //"deno.suggest.autoImports":true,
+    //开启 import 提示
+    "deno.suggest.imports.autoDiscover":true,
+}

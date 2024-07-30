@@ -1,4 +1,4 @@
-import { version } from '../../../version';
+import { version } from '../../../version.ts';
 
 export function healthStatus() {
     return {

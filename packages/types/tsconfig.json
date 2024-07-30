@@ -1,5 +1,5 @@
 {
-    "extends" : "@skimhugo/tsconfig",
+    "extends": "@skimhugo/tsconfig",
     "compilerOptions": {
         // 编译后生成的文件目录
         "outDir": "./dist",

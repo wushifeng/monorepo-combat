@@ -1,1 +1,1 @@
-export { getHandler } from './get';
+export { getHandler } from './get.ts';
