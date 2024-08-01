@@ -1,0 +1,14 @@
+console.log('key 保存一个key:', localStorage.getItem('保存一个key'));
+localStorage.setItem('齐天大圣', '至尊宝');
+console.log('key 齐天大圣:', localStorage.getItem('齐天大圣'));
+console.log('localStorage 长度为', localStorage.length);
+localStorage.removeItem('齐天大圣');
+console.log('localStorage 长度为', localStorage.length);
+console.log('key 齐天大圣:', localStorage.getItem('齐天大圣'));
+localStorage.setItem('盘丝大仙', '紫霞');
+console.log('key 盘丝大仙:', localStorage.getItem('盘丝大仙'));
+console.log('localStorage 长度为', localStorage.length);
+localStorage.clear();
+console.log('localStorage 长度为', localStorage.length);
+console.log('key 盘丝大仙:', localStorage.getItem('盘丝大仙'));
+localStorage.setItem('保存一个key', '紫霞');

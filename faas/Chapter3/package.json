@@ -3,6 +3,24 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "run:01": "deno run 01-hello-world.ts"
-    }
+        "run:01": "deno run 01-hello-world.ts",
+        "run:02": "deno run 02-deno-api-lifecycle.ts",
+        "run:03": "deno run --allow-read --allow-net 03-fetch.ts",
+        "run:04": "deno run --location http://example.com/ 04-location.ts",
+        "run:05": "deno run 05-web-storage.ts",
+        "run:06": "deno run --allow-net 06-web-server-and-events.ts",
+        "run:07": "deno run --allow-read --allow-write --allow-env 07-file.ts",
+        "run:08": "deno run  --watch 08-collections.ts",
+        "run:09": "deno run 09-flags.ts",
+        "run:10": "deno run --allow-read --allow-env 10-env.ts",
+        "run:11": "deno run  --allow-sys --unstable 11-os.ts ",
+        "run:12": "deno run  12-npm.ts ",
+        "run:13": "deno run --allow-net 13-hello-world-server.ts",
+        "run:14": "deno run --allow-net 14-echo-server.ts",
+        "run:15": "deno run --allow-net --unstable  15-server-flash.ts",
+        "run:16": "deno run --allow-net 16-oak-hello-world.ts",
+        "run:17": "export AUTH_TOKEN=my_auth && deno run --allow-net --allow-env --allow-read 17-simple-server.ts",
+        "run:18": "deno run --allow-net 18-simple-server-client.ts"
+  
+      }
 }
