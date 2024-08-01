@@ -1,8 +1,4 @@
-export { Application, Context, Router } from 'https://deno.land/x/oak@v11.1.0/mod.ts';
-
-//After version 0.224.0, new versions of the Standard Library are published to JSR intead of deno.land/std.
-export { brightRed } from 'https://jsr.io/@std/fmt/0.225.6/colors.ts';
-
-export { intersect } from 'https://jsr.io/@std/collections/1.0.5/intersect.ts';
-
-export { STATUS_CODE } from 'https://jsr.io/@std/http/0.224.5/status.ts';
+export { Application, Context, Router } from 'https://deno.land/x/oak@v12.1.0/mod.ts';
+export { brightRed } from 'https://deno.land/std@0.182.0/fmt/colors.ts';
+export { intersect } from 'https://deno.land/std@0.182.0/collections/intersect.ts';
+export { Status } from 'https://deno.land/std@0.182.0/http/mod.ts';

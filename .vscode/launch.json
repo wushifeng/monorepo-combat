@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "request": "launch",
+            "name": "registry2-deno",
+            "type": "node",
+            "program": "${workspaceFolder}/faas/registry2/server.ts",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "runtimeExecutable": "C:\\tool\\deno\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all"
+            ],
+            "attachSimplePort": 9229
+        },
+        {
+            "request": "launch",
+            "name": "registry2-example",
+            "type": "node",
+            "program": "${workspaceFolder}/faas/registry2/example/users-search/main.ts",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "AUTH_TOKEN": "my_auth"
+            },
+            "runtimeExecutable": "C:\\tool\\deno\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all"
+            ],
+            "attachSimplePort": 9229
+        }
+    ]
+}

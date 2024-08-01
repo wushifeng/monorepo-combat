@@ -1,12 +1,11 @@
-import pkg from '../package.json' with {type: 'json'};
+import pkg from '../package.json' assert { type: 'json' };
 const startTime = Date.now();
-
 export function version() {
-
-    return {
-        version: pkg.version,
-        uptime: (Date.now() - startTime) / 1000,
-        ...Deno.version,
-        ...Deno.memoryUsage(),
-    }
+  // 返回版本信息、启动时间、Deno版本、内存使用情况
+  return {
+    version: pkg.version,
+    uptime: (Date.now() - startTime) / 1000,
+    ...Deno.version,
+    ...Deno.memoryUsage(),
+  };
 }

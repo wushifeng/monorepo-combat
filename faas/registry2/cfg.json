@@ -1,8 +1,8 @@
 {
-  "serverPort": 8000,
-  "portCfg": {
-    "start":8001,
-    "end":9000,
-    "excludes": [8002, 8003, 8004]
-  }
+    "serverPort": 8000,
+    "portCfg":{
+        "start":18001,
+        "end":19000,
+        "excludes":[8002,8003,8004,8005]
+    }
 }
