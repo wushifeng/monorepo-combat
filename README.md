@@ -52,3 +52,12 @@ faas\Chapter3 运行 pnpm run run:01
 服务端： pnpm run start 或 deno run --allow-net server.ts
 客户端： curl http://localhost:8000/v1/healthcheck
 
+```
+vscode查看Deno.* 这样的函数时，需要Enable这个denoland.vscode-deno插件，就不提示语法错
+pnpm run start 绑定了端口 8000
+faas\registry2\src\router.ts 中注册了服务路由
+
+pnpm run example 启动了/users/search 服务，并注册到上面的8000服务中 http://localhost:8000/v1/registry,服务端口就是这个注册服务给返回的
+
+
+```

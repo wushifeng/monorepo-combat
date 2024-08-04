@@ -28,6 +28,10 @@ importers:
 
   faas/registry: {}
 
+  faas/registry2: {}
+
+  faas/s3: {}
+
   packages/types: {}
 
 packages:
