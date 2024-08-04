@@ -1,0 +1,8 @@
+{
+    "name": "@faas/timer",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "deno run --allow-env --allow-read --allow-write  --allow-net main.ts"
+      }
+}

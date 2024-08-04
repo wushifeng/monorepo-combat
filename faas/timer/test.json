@@ -1,0 +1,18 @@
+{
+    "delay":10, 
+    "event": {
+        "receiveTime":"2023-05-14T02:42:00.665Z",
+        "triggerTime":"2023-05-14T02:45:00.011Z",
+        "event":{
+            "type":"http",
+            "url":"http://localhost:3000/v1/activity/done",
+            "method":"POST",
+            "body":{
+                "activityId":25
+            },
+            "headers":{
+                "content-type": "application/json"
+            }
+        }
+    }
+}

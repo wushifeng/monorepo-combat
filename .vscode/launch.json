@@ -50,6 +50,21 @@
                 "--allow-all"
             ],
             "attachSimplePort": 9229
+        },
+
+        {
+            "request": "launch",
+            "name": "timer",
+            "type": "node",
+            "program": "${workspaceFolder}/faas/timer/main.ts",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\tool\\deno\\deno.EXE",
+            "runtimeArgs": [
+                "run",
+                "--inspect-wait",
+                "--allow-all"
+            ],
+            "attachSimplePort": 9229
         }
     ]
 }
